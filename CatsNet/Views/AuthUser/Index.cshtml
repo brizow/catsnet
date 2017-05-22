@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Your Home</h2>
+<p>Please choose a food item to sit out. Then, sit back and wait for the kitties to arrive.</p>
+
+<div class="well">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-faded">
+        <p class="navbar-brand">
+            <img src="~/Content/Images/moneysymbol.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <label id="money">@ViewBag.MoneyAmount</label>
+        </p>
+    </nav>
+
+
+    <div id="body" class="container">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+            <button type="button" id="kibbles" class="btn btn-secondary" >Kibbles</button>
+            <button type="button" id="chicken" class="btn btn-secondary">Chicken</button>
+            <button type="button" id="fish" class="btn btn-secondary">Fish</button>
+            <button type="button" id="fancy" class="btn btn-secondary">Fancy</button>
+        </div>
+    </div>
+</div>
+
+
